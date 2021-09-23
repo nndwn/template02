@@ -1,0 +1,36 @@
+#navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem
+}
+#navigation a {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+#navigation nav {
+    display: flex;
+    justify-content: space-between;
+}
+#navigation .logo a {
+    font-weight: 800;
+}
+#navigation .list-item {
+    display: inherit;
+    align-items: center;
+}
+
+#navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+#navigation li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#navigation .list-item a {
+    font-weight: 700;
+}
