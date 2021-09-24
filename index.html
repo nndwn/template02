@@ -8,8 +8,10 @@
         <link href="css/custom.css"  rel="stylesheet"/>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
           <!--Jquery 1.8.3 -->
         <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+        <script src="js/custom.js"></script>
     </head>
     <body>
         <section id="navigation">
@@ -25,7 +27,7 @@
                             Sumalacca International Integrated Industry and Port Estate
                         </p>
                     </div>
-                    <div class="list-item">
+                    <div class="list-item d-md-block">
                         <ul>
                             <li>
                                 <a href="">Menu1</a>
@@ -44,19 +46,63 @@
                 </nav>
             </header>
         </section>
+        <section id="navi_mobile">
+            <div aria-controls="outCanvas" href="#offCanvas" aria-label="outanvas" class="nav-toggle d-md-none" data-bs-toggle="offcanvas" id="minitoggle" role="button" type="button">
+                <div class="nav-toggle-bar"></div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvas" aria-labelledby="outcanvas">
+                <div class="list-item">
+                    <ul>
+                        <li>
+                            <a href="#">Menu1</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu3</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section id="Headline">
             <div class="wrapper-slide">
-                <div id="myCarousel_home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="myCarousel_home" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="4500" style="background-image: url('image/01.jpg');">
-                            <img class="img-fluid" src="image/01.jpg" alt=""/>
+                        
+                        <div class="carousel-item" data-bs-interval="4500">
+                            <div class="title col-md-5 col-sm-12">
+                                <h1 class="text-center text-sm-start">
+                                    Sumalacca International Integrated Industry and Port Estate
+                                </h1>
+                            </div>
+                            <div class="overlay col-md-5"></div>
+                            <img class="img-fluid" src="image/01.jpg" alt=""/> 
                         </div>
-                        <div class="carousel-item" data-bs-interval="4500" style="background-image: url('');">
-                            <img class="img-fluid" src="image/02.jpg" alt=""/>
+                        <div class="carousel-item" data-bs-interval="4500" >
+                            <div class="title col-md-5 col-sm-12">
+                                <h1 class="text-center text-sm-start">
+                                    Sumalacca International Integrated Industry and Port Estate
+                                </h1>
+                            </div>
+                            <div class="overlay col-md-5"></div>
+                            <img class="img-fluid" src="image/02.jpg" alt=""/>                   
                         </div>
-                        <div class="carousel-item" data-bs-interval="4500" style="background-image: url('');">
+                        <div class="carousel-item" data-bs-interval="4500" >
+                            <div class="title col-md-5 col-sm-12">
+                                <h1 class="text-center text-sm-start">
+                                    Sumalacca International Integrated Industry and Port Estate
+                                </h1>
+                            </div>
+                            <div class="overlay col-md-5"></div>
                             <img class="img-fluid" src="image/03.jpg" alt=""/>
                         </div>
+
                     </div>
                 </div>
             </div>
