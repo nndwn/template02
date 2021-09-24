@@ -23,9 +23,9 @@ $(document).ready(function(){
           $item.height($wHeight);
         });
 
-        $('#myCarousel_home.carousel').carousel({
-          // interval: 5500,
-          pause: "false"
-        });
+        // $('#myCarousel_home.carousel').carousel({
+        //   // interval: 5500,
+        //   pause: "false"
+        // });
 
 });

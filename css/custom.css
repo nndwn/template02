@@ -1,3 +1,10 @@
+:root {
+
+    --color-main: #0072ff;
+    --drop-shadow: 1px 1px 6px #0000007d;
+
+}
+
 #navigation {
     position: absolute;
     width: 100%;
@@ -11,6 +18,7 @@
 #navigation a {
     color: var(--bs-white);
     text-decoration: none;
+    text-shadow: var(--drop-shadow);
 }
 #navigation nav {
     display: flex;
@@ -46,6 +54,8 @@
     -o-transition: color .2s linear;
     transition: color .2s linear;
     z-index: 60;
+    font-size: 1.1rem;
+
 }
 
 #navigation .list-item li:hover a:after, #navigation .list-item li:active a:after{
@@ -54,7 +64,7 @@
     transform: scaleX(1);
 }
 #navigation .list-item li:hover a:after, #navigation .list-item li:active a:after {
-    border-color: #d2281f!important;
+    border-color: var(--color-main);
 }
 #navigation .list-item li a:after{
     -ms-transition: -webkit-transform .3s ease-out,border-color .3s ease-out;
@@ -144,22 +154,43 @@
     background-size: cover;
 }
 
-#Headline .title {
+#Headline .content-headline {
     Display: flex;
-    align-items: center;
     color: var(--bs-white);
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     height: inherit;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#Headline .title h1 {
-    font-size: calc(2.4rem + 1.5vw);
+#Headline .content-headline .title {
+    font-size: calc(2.1rem + 1.5vw);
     font-weight: bold;
+}
+#Headline .content-headline .desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-right: 5rem;
+}
+#Headline .content-headline .title ,#Headline .content-headline .desc {
+    text-shadow: var(--drop-shadow);
+}
+
+#Headline .overlay {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-color: var(--color-main);
+    clip-path: polygon(0 0,100% 0,70% 100%,0 100%);
+    z-index: -1;
+    opacity: 70%;
 }
 
 @media (min-width: 1200px){
-    #Headline .title h1{
-        font-size: 3.4rem;
+    #Headline .content-headline .title{
+        font-size: 3.1rem;
     }
 }
